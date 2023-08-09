@@ -1,5 +1,6 @@
 const mysql = require('mysql2/promise')
 const Pool=mysql.Pool
+
 require('dotenv').config()
 
 
@@ -9,5 +10,6 @@ const pool=mysql.createPool({
     host:process.env.HOST,
     port:process.env.DBPORT,
     database:'todoapp'
+
 })
 module.exports=pool
